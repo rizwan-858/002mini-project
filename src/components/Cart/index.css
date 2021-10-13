@@ -1,0 +1,289 @@
+.CartContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.EmptyImg {
+  width: 30%;
+}
+
+.NoItem {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.NoOrder {
+  font-family: 'DM Sans';
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .NoOrder {
+    font-family: 'DM Sans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+}
+
+.EmptyCart {
+  font-family: 'DM Sans';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .EmptyCart {
+    font-family: 'DM Sans';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+}
+
+.OrderBtn {
+  height: 32px;
+  width: 93px;
+  left: 0px;
+  top: 0px;
+  border: none;
+  border-radius: 8px;
+  padding: 8px, 16px, 8px, 16px;
+  color: #ffffff;
+  background-color: #f7931e;
+  font-family: 'DM Sans';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: center;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .OrderBtn {
+    height: 32px;
+    width: 93px;
+    left: 0px;
+    top: 0px;
+    border-radius: 8px;
+    padding: 8px, 16px, 8px, 16px;
+  }
+}
+
+.CartMain {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+}
+.TotalPriceContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+@media (max-width: 768px) {
+  .TotalPriceContainer {
+    margin-top: 0;
+  }
+}
+
+.PriceContainer {
+  width: 80%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9fbfe;
+}
+@media (max-width: 768px) {
+  .PriceContainer {
+    width: 100%;
+    background: #ffffff;
+  }
+}
+
+.PriceLine {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 87%;
+}
+.Cost {
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #3e4c59;
+}
+
+.Rupees {
+  font-family: 'DM Sans';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: right;
+  display: flex;
+  align-items: center;
+}
+.Hr {
+  width: 100%;
+  border: none;
+  border-top: 2px dashed #cbd2d9;
+  color: #fff;
+  background-color: #fff;
+  height: 1px;
+}
+.CartHeading {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  font-family: 'DM Sans';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.20000000298023224px;
+}
+@media (max-width: 786px) {
+  .CartHeading {
+    display: none;
+  }
+}
+
+.CartItemsList {
+  list-style-type: none;
+  padding: 0;
+}
+.CartItem {
+  padding: 0;
+  width: 90%;
+  margin-bottom: 10px;
+}
+.PlaceOrder {
+  height: 32px;
+  width: 99px;
+  left: 0px;
+  top: 0px;
+  border-radius: 8px;
+  padding: 8px, 16px, 8px, 16px;
+  background-color: #f7931e;
+  font-family: 'DM Sans';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  cursor: pointer;
+  border: none;
+  color: #ffffff;
+  align-self: flex-end;
+  position: relative;
+  left: -13.5%;
+}
+
+.PaymentMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px;
+  border-radius: 10px;
+  box-shadow: 0px 4.0073394775390625px 40.073394775390625px 0px #171f4629;
+}
+@media (max-width: 768px) {
+  .PaymentMain {
+    width: 300px;
+    padding: 40px;
+  }
+}
+
+.PaymentHeading {
+  font-family: 'DM Sans';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .PaymentHeading {
+    font-family: 'DM Sans';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+}
+
+.ThankYou {
+  font-family: 'DM Sans';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .ThankYou {
+    font-family: 'DM Sans';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+}
+
+.HomeBtn {
+  height: 32px;
+  width: 131px;
+  left: 0px;
+  top: 0px;
+  border-radius: 8px;
+  padding: 8px, 16px, 8px, 16px;
+  font-family: 'DM Sans';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: center;
+  background-color: #f7931e;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}

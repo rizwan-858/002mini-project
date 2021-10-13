@@ -1,0 +1,13 @@
+.btnCon {
+  display: flex;
+  width: 80px;
+  justify-content: space-between;
+}
+
+.btn {
+  background-color: transparent;
+  border: 1px solid #3e4c59;
+  border-radius: 3px;
+  color: #3e4c59;
+  cursor: pointer;
+}

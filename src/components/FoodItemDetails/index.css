@@ -1,0 +1,139 @@
+.ItemMain {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .ItemMain {
+    width: 100%;
+  }
+}
+
+.ItemImg {
+  min-width: 250px;
+  max-width: 250px;
+  height: 150px;
+  border-radius: 5px;
+}
+@media (max-width: 768px) {
+  .ItemImg {
+    height: 100px;
+    min-width: 160px;
+    max-width: 160px;
+    left: 24px;
+    top: 284px;
+    border-radius: 5.0196075439453125px;
+  }
+}
+
+.ItemDetailsCon {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+@media (max-width: 768px) {
+  .ItemDetailsCon {
+    width: 100%;
+  }
+}
+
+.ItemName {
+  font-family: DM Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  margin: 5px;
+}
+@media (max-width: 768px) {
+  .ItemName {
+    font-family: DM Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+  }
+}
+
+.RAndR {
+  display: flex;
+  align-items: center;
+}
+
+.Cost {
+  font-family: 'DM Sans';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin: 3px;
+}
+@media (max-width: 768px) {
+  .Cost {
+    font-family: 'DM Sans';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+}
+
+.Rating {
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin: 3px;
+}
+@media (max-width: 768px) {
+  .Rating {
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+}
+
+.AddButton {
+  font-family: 'DM Sans';
+  height: 32px;
+  width: 58px;
+  left: 1054px;
+  top: 656px;
+  border: 2px solid #ffa412;
+  border-radius: 8px;
+  color: #ffa412;
+  background-color: transparent;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .AddButton {
+    height: 23.999998092651367px;
+    width: 44px;
+    left: 200px;
+    top: 481px;
+    border-radius: 5px;
+  }
+}
+
+.AddCon {
+  height: 33px;
+  display: flex;
+  align-items: center;
+}
