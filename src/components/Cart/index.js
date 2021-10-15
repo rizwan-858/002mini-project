@@ -95,7 +95,7 @@ class Cart extends Component {
               </ul>
               <ul className="CartItemsList">
                 {formattedData.map(each => (
-                  <li className="CartItem" key={each.id}>
+                  <li testid="cartItem" className="CartItem" key={each.id}>
                     <CartItem item={each} />
                   </li>
                 ))}

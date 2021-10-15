@@ -1,5 +1,5 @@
 import {Component} from 'react'
-import {Switch, Redirect, BrowserRouter, Route} from 'react-router-dom'
+import {Switch, Redirect, Route} from 'react-router-dom'
 import Login from './components/LoginRoute'
 import Home from './components/Home'
 import Cart from './components/Cart'
@@ -72,30 +72,28 @@ class App extends Component {
       localStorage.setItem('cartData', JSON.stringify(cartList))
     }
     return (
-      <BrowserRouter>
-        <MainContext.Provider
-          value={{
-            cartList,
-            onAddToCart: this.onAddToCart,
-            increaseCount: this.increaseCount,
-            decreaseCount: this.decreaseCount,
-            clearCartList: this.clearCartList,
-          }}
-        >
-          <Switch>
-            <Route exact path="/login" component={Login} />
-            <ProtectedRoute exact path="/" component={Home} />
-            <ProtectedRoute exact path="/cart" component={Cart} />
-            <ProtectedRoute
-              exact
-              path="/restaurant/:id"
-              component={RestaurantDetails}
-            />
-            <Route path="/bad-path" component={NotFound} />
-            <Redirect to="/bad-path" />
-          </Switch>
-        </MainContext.Provider>
-      </BrowserRouter>
+      <MainContext.Provider
+        value={{
+          cartList,
+          onAddToCart: this.onAddToCart,
+          increaseCount: this.increaseCount,
+          decreaseCount: this.decreaseCount,
+          clearCartList: this.clearCartList,
+        }}
+      >
+        <Switch>
+          <Route exact path="/login" component={Login} />
+          <ProtectedRoute exact path="/" component={Home} />
+          <ProtectedRoute exact path="/cart" component={Cart} />
+          <ProtectedRoute
+            exact
+            path="/restaurant/:id"
+            component={RestaurantDetails}
+          />
+          <Route path="/bad-path" component={NotFound} />
+          <Redirect to="/bad-path" />
+        </Switch>
+      </MainContext.Provider>
     )
   }
 }
